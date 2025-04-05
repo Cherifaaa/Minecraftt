@@ -1,0 +1,543 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(./font/Minecrafter.Reg.ttf);
+}
+
+@font-face {
+    font-family: Minecraft2;
+    src: url(./font/Profontwindows-axBMx.ttf);
+}
+
+@font-face {
+    font-family: Minecraft3;
+    src: url(./font/f77-minecraft-font/F77MinecraftRegular-0VYv.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecraft', sans-serif;
+}
+
+body {
+    color: #fff;
+    background: #003e05;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Bandeau {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    position: relative;
+    height: 35px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    font-family: 'Minecraft3', sans-serif;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+
+}
+
+
+.sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+
+}
+
+nav ul li a div {
+    font-family: 'Minecraft3', sans-serif;
+}
+
+nav ul li:hover .sous {
+    display: block;
+    opacity: 1;
+}
+
+#Communautés {
+    background: url(./img/Commu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Ressourcess {
+    background: url(./img/ressource.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Quizs {
+    background: url(./img/quiz.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Barre {
+    height: 30px;
+    width: 100%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#BarreQ {
+    height: 30px;
+    width: 75%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#Barre:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#BarreQ:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 75%;
+    height: 100%;
+}
+
+#Barre::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: #00c43e;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#BarreQ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: #00c43e;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+
+.main {
+    min-height: 100vh;
+    background: url('./img/Q4img1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
+
+.home {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-content h1 {
+    font-size: 78px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    text-align: center;
+    height: 230px;
+}
+
+.home-content p {
+    font-size: 16px;
+    font-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+    font-family: 'Minecraft2', sans-serif;
+}
+
+.home-content .start-btn {
+    width: 190px;
+    height: 55px;
+    background: rgb(52, 157, 127);
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #48E1A0;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home-content .start-btn:hover {
+    background: #0b5145;
+    box-shadow: no;
+}
+
+.quiz-section {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    background:url('./img/Q4img2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: .8s ease-in-out;
+    transition-delay: .25s;
+
+}
+
+.quiz-section.active {
+    left: 0;
+}
+
+.quiz-section .quiz-box {
+    position: relative;
+    width: 500px;
+    background: #58C794;
+    border: 2px solid #48E1A0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.9);
+    transition: .3s ease;
+    transition-delay: 0s;
+}
+
+.quiz-section .quiz-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 1s ease;
+    transition-delay: 1s;
+}
+
+.quiz-box h1 {
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(45deg, transparent, rgb(52, 157, 127), transparent);
+    border-radius: 6px;
+}
+
+.quiz-box .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid#48E1A0;
+    margin-bottom: 30px;
+
+}
+
+.quiz-header span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-header .header-score {
+    background:  #58C794;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.quiz-box .question-text {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Minecraft2', sans-serif;
+}
+
+.option-list .option span {
+    font-family: 'Minecraft2';
+}
+
+.option-list .option {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 4px;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+
+}
+
+.option-list .option:hover {
+    background: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.option-list .option.incorrecte {
+    background:  #58C794;
+    color: #ae0216;
+    border-color: #ae0216;
+}
+
+.option-list .option.correcte {
+    background:  #58C794;
+    color:  #00c43e;
+    border-color:#00c43e;
+}
+
+.option-list .option.désactivé {
+    pointer-events: none;
+}
+
+.quiz-box .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #48E1A0;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+.quiz-footer .question-total {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quiz-footer .next-btn {
+    width: 100px;
+    height: 45px;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .3);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.quiz-footer .next-btn.active {
+    pointer-events: auto;
+    background: #58C794;
+    border-color: #48E1A0;
+    color: #fff;
+}
+
+.quiz-footer .next-btn.active:hover {
+    background: rgb(52, 157, 127);
+    border-color: #48E1A0;
+}
+
+.quiz-section .result-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.9);
+    width: 500px;
+    background:  #58C794;
+    border: 2px solid #48E1A0;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
+
+.quiz-section .result-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.result-box h2 {
+    font-size: 52px;
+}
+
+.result-box .pourcentage-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 40px;
+}
+
+.pourcentage-container .progression {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: conic-gradient( #58C794 3.6deg, rgba(255,255,255,.1) 0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pourcentage-container .progression::before {
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: #58C794;
+    border-radius: 50%;
+}
+
+.progression .valeur {
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.pourcentage-container .score-text {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-family: 'Minecraft2', sans-serif;
+}
+
+.result-box .boutons {
+    display: flex;
+}
+
+.boutons button {
+    width: 130px;
+    height: 47px;
+    background:  #58C794;
+    border: 2px solid #48E1A0;
+    outline: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin: 0 20px 20px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Minecraft3', sans-serif;
+}
+
+.boutons button:nth-child(1):hover {
+    background: rgb(52, 157, 127);
+    border-color: #48E1A0;
+}
+
+.boutons button:nth-child(2) {
+    background: transparent;
+    color:  #fff;
+}
+
+.boutons button:nth-child(2):hover {
+    background:  rgb(52, 157, 127);
+    color: #fff;
+}
+
+
+
+
+
