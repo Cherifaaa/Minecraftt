@@ -1,0 +1,500 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(./font/f77-minecraft-font/F77MinecraftRegular-0VYv.ttf);
+}
+
+.Bandeau {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+body {
+    font-family: minecraft;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    position: absolute;
+    /* Modification de la position à absolute */
+    top: 0;
+    /* Ajout de cette propriété */
+    right: 0;
+    /* Ajout de cette propriété */
+    height: 35px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+
+}
+
+
+.sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li:hover .sous {
+    display: block;
+    opacity: 1;
+}
+
+#Communautés {
+    background: url(./img/Commu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Ressourcess {
+    background: url(./img/ressource.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Quizs {
+    background: url(./img/quiz.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Barre {
+    height: 30px;
+    width: 100%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#BarreQ {
+    height: 30px;
+    width: 75%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#Barre:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#BarreQ:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 75%;
+    height: 100%;
+}
+
+#Barre::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: greenyellow;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#BarreQ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: greenyellow;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#Actu {
+    top: 800px;
+    font-family: minecraft;
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 50%;
+    height: 100%;
+    font-size: 14pt;
+}
+
+#Actu2 {
+    top: 1650px;
+    font-family: minecraft;
+    position: absolute;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 100%;
+    font-size: 14pt;
+}
+
+
+
+.Texture_pack_shaders_mods {
+    background-color: RGBa(255, 255, 255, 0.5);
+    font-family: minecraft;
+    width: 80%;
+    margin: 250px auto 50px;
+    padding: 25px;
+    font-size: 14pt;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+
+.sous_categorie {
+    position: relative;
+    margin-bottom: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+.texte_texturepack_shaders_mods {
+    width: 50%;
+}
+
+.img_texture_pack_shaders_mods {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 45%;
+    height: 100%;
+}
+
+.couche1 {
+    z-index: -1;
+    position: relative;
+    top: 730px;
+    width: 100%;
+    height: 100%;
+}
+
+.couche2 {
+    z-index: -1;
+    position: relative;
+    top: 700px;
+    width: 100%;
+    height: 100%;
+}
+
+.couche3 {
+    z-index: -1;
+    position: relative;
+    top: 690px;
+    width: 100%;
+    height: 100%;
+}
+
+#trailer1 {
+    position: absolute;
+    float: right;
+    top: 900px;
+    right: 20px;
+    width: 45%;
+    height: 50%;
+}
+
+#trailer2 {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+}
+
+.fond_texturepack_shaders_mods_build {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+
+/* Partie diaporama build */
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.diapo_1,
+.diapo_2 {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.elements_1,
+.elements_2 {
+    display: flex;
+}
+
+.element_1,
+.element_2 {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element_1>img,
+.element_2>img {
+    width: 100%;
+}
+
+.caption_1,
+.caption_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, 700%);
+    padding: 5px;
+    z-index: 1;
+}
+
+.nav-gauche_1,
+.nav-droite_1,
+.nav-gauche_2,
+.nav-droite_2 {
+    position: absolute;
+    top: 38%;
+    width: 6%;
+    cursor: pointer;
+}
+
+.nav-droite_1,
+.nav-droite_2 {
+    right: 0;
+}
+
+
+.diapo_3 {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.elements_3 {
+    display: flex;
+}
+
+.element_3 {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element_3>img {
+    width: 100%;
+}
+
+.caption_3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, 700%);
+    padding: 5px;
+    z-index: 1;
+}
+
+.nav-gauche_3,
+.nav-droite_3 {
+    position: absolute;
+    top: 38%;
+    width: 6%;
+    cursor: pointer;
+}
+
+.nav-droite_3 {
+    right: 0;
+}
+
+.diapo_4 {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.elements_4 {
+    display: flex;
+}
+
+.element_4 {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element_4>img {
+    width: 100%;
+}
+
+.caption_4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, 700%);
+    padding: 5px;
+    z-index: 1;
+}
+
+.nav-gauche_4,
+.nav-droite_4 {
+    position: absolute;
+    top: 38%;
+    width: 6%;
+    cursor: pointer;
+}
+
+.nav-droite_4 {
+    right: 0;
+}
+
+.diapo_5 {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.elements_5 {
+    display: flex;
+}
+
+.element_5 {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element_5>img {
+    width: 100%;
+}
+
+.caption_5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, 700%);
+    padding: 5px;
+    z-index: 1;
+}
+
+.nav-gauche_5,
+.nav-droite_5 {
+    position: absolute;
+    top: 38%;
+    width: 6%;
+    cursor: pointer;
+}
+
+.nav-droite_5 {
+    right: 0;
+}
+
+.redimension {
+    height: 600px;
+    width: 1920px;
+}
+
+#horloge {
+    width: 95%;
+    height: 100%;
+}
+
+@media(max-width: 1362px) {
+    #Actu {
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 1254px) {
+    #Actu {
+        font-size: 9pt;
+    }
+}
+
+@media(max-width: 950px) {
+    #Actu {
+        opacity: 0;
+    }
+
+    #trailer {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 0px;
+        top: 810px;
+    }
+}

@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: minecraft;
+    src: url(./font/f77-minecraft-font/F77MinecraftRegular-0VYv.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/image.png);
+    font-family: minecraft;
+    box-sizing: border-box;
+}
+
+.Bandeau {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    position: relative;
+    height: 35px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+
+}
+
+
+.sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li:hover .sous {
+    display: block;
+    opacity: 1;
+}
+
+#Communautés {
+    background: url(./img/Commu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Ressourcess {
+    background: url(./img/ressource.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Quizs {
+    background: url(./img/quiz.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px 25%;
+}
+
+#Barre {
+    height: 30px;
+    width: 100%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#BarreQ {
+    height: 30px;
+    width: 75%;
+    border-radius: 50px 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#Barre:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+#BarreQ:hover::before {
+    top: 0;
+    border-radius: 50px 50px;
+    opacity: 1;
+    width: 75%;
+    height: 100%;
+}
+
+#Barre::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    background-color: greenyellow;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#BarreQ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: greenyellow;
+    border-radius: 5% 90%;
+    transition: all .5s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#bo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+}
+
+.book {
+    position: relative;
+    width: 358px;
+    height: 500px;
+    transition: transform 0.5;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    background-color: #F6E6D1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid black;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: #636363;
+}
+
+i {
+    font-size: 20px;
+    color: gray;
+}
+
+#p1 {
+    z-index: 6;
+}
+
+#p2 {
+    z-index: 5;
+}
+
+#p3 {
+    z-index: 4;
+}
+
+#p4 {
+    z-index: 3;
+}
+
+#p5 {
+    z-index: 2;
+}
+
+#p6 {
+    z-index: 1;
+}
+
+#page1 {
+    width: 105%;
+    height: 105%;
+}
+
+.t {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 35px;
+}
+
+.sommaire {
+    margin-left: 35px;
+}
+
+
+#texte2 {
+    margin-top: 45px;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 17px;
+}
+
+#notch {
+    width: 90%;
+    height: 50%;
+    margin: 10, 15px, 10px, 15px;
+}
+
+#texte3 {
+    margin-top: 65px;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+#texte4 {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#whatisminecraft {
+    width: 100%;
+    height: 50%;
+    margin: 10px, 15px, 10px, 15px;
+}
+
+#texte5 {
+    margin-top: 65px;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#texte5_2 {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#jeb {
+    width: 75%;
+    height: 50%;
+    margin: 10px, 15px, 10px, 15px;
+}
+
+.texte6 {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+#page7 {
+    width: 102%;
+    height: 102%;
+}
+
+#retour {
+    position: fixed;
+    height: 25px;
+    width: 90px;
+    bottom: 155px;
+    left: 47%;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: gray;
+    border-radius: 50px 50px;
+}
+
+#retour:hover {
+    color: #ffffff;
+}
+
+.fas_fa_arrow_circle {
+    height: 135px;
+    width: 98px;
+    background-color: RGBa(112, 112, 112, 0.5);
+    border-radius: 90px 90px;
+    
+}

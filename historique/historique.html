@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./historique.css">
+    <script src="./script.js" defer></script>
+    <script src="http://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <title>Historique</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../Accueil.html">
+                        <div id="Barre">Accueil</div>
+                    </a></li>
+                <li><a href="./historique.html">
+                        <div id="Barre">Historique</div>
+                    </a></li>
+                <li class="deroulant" id="Communauté"><a href="#">
+                        <div id="Barre">Communauté</div>
+                    </a>
+                    <ul class="sous" id="Communautés">
+                        <li><a href="../build_artistique.html">build artistique</a></li>
+                        <li><a href="../build_redstone.html">build redstone</a></li>
+                        <li><a href="../build_pop_culture.html">build pop culture</a></li>
+                    </ul>
+                </li>
+                <div>
+                    <li class="deroulant" id="Ressources"><a href="#">
+                            <div id="Barre">Ressource</div>
+                        </a>
+                        <ul class="sous" id="Ressourcess">
+                            <li><a href="../texture_pack.html">Texture pack</a></li>
+                            <li><a href="../shaders.html">Shaders</a></li>
+                            <li><a href="../mods.html">Mods</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <li class="deroulant" id="Quiz"><a href="#">
+                        <div id="BarreQ">Quiz</div>
+                    </a>
+                    <ul class="sous" id="Quizs">
+                        <li><a href="#">Quiz histoire</a></li>
+                        <li><a href="#">Quiz craft</a></li>
+                        <li><a href="#">Quiz mob</a></li>
+                        <li><a href="#">Quiz consommable</a></li>
+                        <li><a href="#">Grand quiz</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="bo">
+        <button id="prev-btn">
+            <img class="fas_fa_arrow_circle" src="../img/chevron_gauche.png">
+        </button>
+
+        <div id="book" class="book">
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img id="page1" src="./img/cover_livre.png">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <h1 class="t">Sommaire : </h1>
+                        <br>
+                        <ul>
+                            <li>
+                                <h2 class="sommaire">Qui est Notch ?</h2><br><br>
+                            </li>
+                            <li>
+                                <h2 class="sommaire">Qu'est-ce que Minecraft ?</h2><br><br>
+                            </li>
+                            <li>
+                                <h2 class="sommaire">Evolution du jeu</h2><br><br>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <img src="./img/tumblr_inline_pmu29x9wnx1wuj82d_250.gif">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <h1 class="t">Qui est Notch ?</h1>
+                        <h2 id="texte2">Markus Alexej Persson, aka Notch, est le créateur de Minecraft et l’un des
+                            fondateurs de
+                            Mojang ABC. Il est né le 1er juin 1979 à Stockholm.<br><br> C’est à l’âge de 7 ans que
+                            Markus commence à programmer en utilisant le Commodore 128 de son père.<br><br>
+                            A partir de 2009, ce développeur débute la création d’un jeu inspiré de Dwarf
+                            Fortress, Dungeon Keeper et Infiniminer. Le concept est simple : le joueur évolue librement
+                            dans un monde qu’il peut aménager à sa guise. </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <img id="notch" src="./img/notch.0.jpeg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <h1 class="t">Qu'est-ce que Minecraft ?</h1>
+                        <h2 id="texte3">Le jeu Minecraft est un jeu de tybe sandbox dans lequel le joueur peut collecter
+                            des ressources dans un monde
+                            ouvert généré de manière procédural afin qu'aucune partie soit identique. Dans celui-ci, il
+                            aura les possibilités de
+                            construire différents objets au sein de plusieurs modes de jeux, un mode Survie dans lequel
+                            il
+                            devra collecter ses propres ressources pour batir son monde, et un mode Créatif où il
+                            possèdera tout de manière illimité et pourra alors batir tout ce qu’il souhaite.<br><br>Il y
+                            a également une dimension RPG avec l’ajout de créature hostile dont certaines deviendront
+                            même des emblèmes du jeu comme les creepers. </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <h2 id="texte4">On retrouve aussi la possibilité de fabriquer
+                            des armes, des outils et d’objets en tout genre. On retrouve également un équivalent de
+                            l'électricité qui se nomme la redstone permetant de réaliser divers systèmes offrant
+                            toujours
+                            plus de possibilités aux joueurs<br><br>
+                            <img id="whatisminecraft" src="./img/Minecraft-Featured-Ecran-Partage-5.png"><br>
+                            Environ 1 an après sa sortie non officielle en 2009,le
+                            jeu s’est vendu à 1 millions d’exemplaires. Il a d'abord été lancé sur ordinateur avant
+                            d'avoir des portages sur consoles et mobiles
+                            créant ainsi une des plus grandes communautés de l'univers des jeux vidéos avec aujourd'hui
+                            plus de 300 millions de copies vendues
+                        </h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <h1 class="t">Evolution du jeu</h1>
+                        <h2 id="texte5">En septembre 2010, Persson fonde Mojang aux côtés de son meilleur ami Jakob
+                            Porsér et de Carl Manneh. À ce moment-là, Markus Persson était déjà reconnu dans la
+                            communauté des développeurs de jeux, notamment pour ses contributions dans le domaine du jeu
+                            indépendant.<br><br>
+                            Jakob Porsér et Carl Manneh jouent des rôles cruciaux en tant que partenaires fondateurs.
+                            Jakob Porsér, en tant que meilleur ami de Markus Persson, apporte probablement une relation
+                            de confiance et une collaboration étroite au sein de l'équipe fondatrice. Carl Manneh, qui
+                            deviendra plus tard le PDG de Mojang, assure la direction de l'entreprise.
+                            Le studio Mojang se distingue par son approche créative et son engagement envers
+                            l'innovation. Dès ses débuts, Mojang est orienté vers le développement de jeux vidéos
+                            originaux et novateurs. Leur premier grand succès est, bien sûr, Minecraft, qui devient
+                            rapidement un phénomène mondial.<br><br>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <h2 id="texte5_2">Jens Bergensten, plus connu sous le pseudonyme de Jeb, a rejoint Mojang en
+                            novembre 2010 en
+                            tant que développeur back-end pour le jeu Scrolls, Jeb a rapidement été de plus en plus
+                            impliqué dans le développement de Minecraft. Sous sa direction, plusieurs fonctionnalités
+                            majeures ont été introduites dans Minecraft notamment la mise en œuvre des éléments tels que
+                            les loups, les pistons et diverses structures, dont des villages, des forts et des
+                            forteresses du Nether. Ces ajouts ont considérablement enrichi le gameplay, offrant aux
+                            joueurs de nouvelles opportunités créatives et stratégiques.<br><br>
+                            Daniel Rosenfeld, connu sous le nom d'artiste C418, est un compositeur et musicien allemand
+                            dont la contribution à Minecraft en tant que créateur de la musique emblématique du jeu est
+                            inestimable. Recruté pour composer la bande sonore, C418 a enrichi l'atmosphère immersive et
+                            captivante de Minecraft, offrant une expérience sonore unique qui harmonise parfaitement
+                            avec le gameplay créatif et réfléchi du jeu.<br><br>
+                        </h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <h2 class="texte6">En décembre 2011, Jeb a pris la place principale dans le développement de
+                            Minecraft, succédant à Notch qui avait démissionné.<br>
+                            <img id="jeb" src="./img/2013_time100_bergensten_persson.png"><br><br>
+                            Sous sa direction, Minecraft a continué à évoluer avec des mises à jour
+                            régulières,
+                            introduisant de nouvelles fonctionnalités, des biomes, des créatures, et des mécaniques de
+                            jeu innovantes. C’est suite à un ras-le-bol et à de nombreux commentaires négatifs de la
+                            part
+                            de la communauté que Notch vend Mojang et tous ses actifs à Microsoft le 15 septembre
+                            2014. Il fini par quitter Mojang le 5 novembre 2014 avec d’autres fondateurs.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="p6" class="paper">
+                <div class="front">
+                    <div id="f6" class="front-content">
+                        <h2 class="texte6">Microsoft apportera d'importants changements notamment à la Pocket Edition.
+                            En effet, elle
+                            a
+                            été optimisée et renommée en Version Bedrock. Cette
+                            transition visait à unifier l'expérience de jeu sur différentes plateformes, permettant aux
+                            joueurs de jouer ensemble qu'importe leur support.<br><br>
+                            On retrouve également la mise en place d'un Marketplace qui a permis aux
+                            créateurs de contenu de monétiser leurs créations, encourageant ainsi un écosystème
+                            dynamique.<br>
+                            Cependant ce choix s'est aussi accompagné d'une mise en avant de la Version Bedrock au
+                            profit de
+                            la version Java. Cela se traduit particulierement sur les mises à jour et
+                            les fonctionnalités ajoutées sur la version Bedrock.<br><br> Finalement, l'acquisition de
+                            Minecraft par Microsoft a permis une expérience de jeu plus
+                            fluide et connectée, tout en introduisant des fonctionnalités
+                            nouvelles mettant en avant la version Bedrock comme la
+                            principale version du jeu. Ce choix bien que compréhensible sur le plan financier reste
+                            très critiqué par l’ensemble des joueurs qui voit le jeu filer de plus en plus dans une
+                            optique d’être toujours plus rentable, le rendant de moins en moins qualitatif comme le
+                            démontre l’engouement autour du jeu et de la MineCon qui diminue année après année.
+                        </h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b6" class="back-content">
+                        <img id="page7" src="./img/cover_livre_back.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="next-btn">
+            <img class="fas_fa_arrow_circle" src="../img/chevron_droite.png">
+        </button>
+    </div>
+
+    <a id="retour" href="./historique.html">Retour</a>
+</body>
+
+</html>
